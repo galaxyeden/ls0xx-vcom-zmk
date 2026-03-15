@@ -1,0 +1,5 @@
+# Copyright (c) 2026 eden ariel - eden@rainbowtree.house
+#
+# SPDX-License-Identifier: Apache-2.0
+
+source "$(ZEPHYR_LS0XX_ZMK_MODULE_DIR)/drivers/display/Kconfig"

@@ -1,0 +1,6 @@
+name: ls0xx-zmk
+build:
+  settings:
+    dts_root: .
+  cmake: .
+  kconfig: Kconfig

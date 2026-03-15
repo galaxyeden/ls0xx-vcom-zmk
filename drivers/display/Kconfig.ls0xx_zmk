@@ -1,0 +1,19 @@
+# Copyright (c) 2020 Rohit Gujarathi
+# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+config LS0XX_ZMK
+	bool "LS0XX memory display controller driver"
+	default y
+	depends on DT_HAS_SHARP_LS0XX_ZMK_ENABLED
+	select SPI
+	help
+	  Enable driver for sharp memory display series LS0XXX7DXXX with
+		serial VCOM inversion support
+
+config LS0XX_VCOM_THREAD_PRIO
+	int "Priority for the VCOM inversion thread"
+	default 11
+	depends on LS0XX_ZMK
+	help
+	  Set the VCOM inversion thread priority
